@@ -1,0 +1,432 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --font-nothing: 'Nothing You Could Do', cursive;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --color-white: #FEFEFE;
+    --color-black: #333745;
+    --color-pink: #E63462;
+    --color-pink-light: #FCEBF0;
+    --color-green: #C7EFCF;
+    --color-green-dark: #82B5A5;
+    --color-yellow: #FFF5EB;
+
+    --font-heading: 4.2rem;
+    --font-hand-large: 4rem;
+    --font-body: 1.8rem;
+    --font-description: 2.6rem;
+    --font-footer: 1.6rem;
+    --font-button: 1.8rem;
+    --font-hand-small: 3rem;
+    --font-menu: 1.4rem;
+
+
+    --color-font-faded: rgba(51, 55, 69,.5);
+    --color-font-white: #FFFFFF;
+    --color-font-newsletter: #C6C6C6;
+
+    --border-radius: 1rem;
+    --border-grey: 1px solid #E8E8E8;
+    --shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    --shadow-button: 0px 2px 2px rgba(0, 0, 0, .1);
+
+  }
+  
+  
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    /* 1 rem = 10 px | 10/16 px = 62.5 % */
+}
+
+body {
+    overflow-x: hidden !important;
+    background-color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover {
+    color: var(--color-black);
+}
+
+/* Utility classes */
+.margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.padding-big {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.padding-medium {
+    padding-top: 8.5rem;
+    padding-bottom: 6.5rem;
+}
+
+.margin-top-big {
+    margin-top: 10rem;
+}
+
+.margin-top-medium {
+    margin-top: 5rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.auto-height {
+    height: auto;
+}
+
+/* Typography */
+
+.hand-writing {
+    font-family: var(--font-nothing);
+    font-size: var(--font-hand-large);
+    color: var(--color-black);
+    font-weight: 100;
+}
+
+.hand-writing-small {
+    font-family: var(--font-nothing);
+    font-size: var(--font-hand-small);
+    color: var(--color-black);
+    font-weight: 100;
+}
+
+.hand-writing-small span {
+    display: block;
+}
+
+.heading-holder {
+    display: block;
+    align-self: center;
+    justify-self: center;
+}
+
+h2.heading-main {
+    font-family: var(--font-roboto);
+    font-size: var(--font-heading);
+    font-weight: 300;
+    text-align: center;
+}
+
+.body-text {
+    margin-top: 2rem;
+
+    font-family: var(--font-roboto);
+    font-size: var(--font-body);
+    font-weight: 400;
+    color: var(--color-black);
+    line-height: 1.5;
+}
+
+/* Images & icons */
+
+.icon-info {
+    margin-right: 1rem;
+    height: 90%;
+    width: auto;
+}
+
+
+.home-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.food-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: center;
+}
+
+.food-image {
+    width: 30rem;
+    height: 30rem;
+}
+
+.food-img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+/* Navigation */
+
+.navigation {
+    padding: 2rem;
+    padding-top: 2.5rem;
+    border: var(--border-grey);
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-raleway);
+    font-size: var(--font-body);
+    font-weight: 700;
+    padding-left: 8rem;
+}
+
+.logo-pink {
+    color: var(--color-pink);
+}
+
+.logo-black {
+    color: var(--color-black);
+}
+
+/* Menu navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 8rem;
+
+    font-family: var(--font-raleway);
+    color: var(--color-black);
+    font-size: var(--font-menu);
+}
+
+li.menu-item {
+    margin-right: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Main */
+
+.main {
+    display: flex;
+    
+    width: 100%;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+/* Buttons */
+
+.button-holder{
+    margin-top: 3rem;
+    display: flex;
+}
+
+a.button-pink {
+    background-color: var(--color-pink);
+    color: var(--color-font-white);
+
+    font-family: var(--font-roboto);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-pink);
+    font-size: var(--font-button);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    box-shadow: var(--shadow-button);
+
+    text-decoration: none;
+}
+
+a.button-white {
+    background-color: none;
+    color: var(--color-black);
+
+    font-family: var(--font-roboto);
+    border-radius: var(--border-radius);
+    border: 2px solid #333745;
+    font-size: var(--font-button);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    box-shadow: var(--shadow-button);
+
+    text-decoration: none;
+
+    margin-left: 1.5rem;
+
+    display: flex;
+}
+
+.home-image-holder {
+    display: flex;
+    width: 40%;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: var(--color-green);
+    background-size: 100vw;
+    transform: skewY(-3deg);
+}
+
+.newsletter input {
+    justify-self: center;
+    transform: skewY(3deg);
+}
+
+.newsletter h2, .newsletter p {
+    transform: skewY(3deg);
+}
+
+.newsletter:last-child {
+    padding-bottom: 10rem;
+}
+
+.email-input {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.email-input input {
+    height: 4rem;
+    padding-left: 1rem;
+    width: 20%;
+    border-radius: var(--border-radius);
+    border: none;
+    border: 2px solid var(--border-grey) !important;
+    box-shadow: none;
+
+    justify-self: center;
+}
+
+.email-input input::placeholder {
+    font-family: var(--font-raleway);
+    color: var(--color-font-newsletter);
+    font-style: italic;
+    font-size: var(--font-footer);
+}
+
+.email-input button {
+    appearance: none;
+	border: none;
+    background: transparent;
+    display: flex;
+    height: 3.2rem;
+    position: absolute;
+    margin-top: 1.4rem;
+    margin-left: 35rem;
+    cursor: pointer;
+}
+
+/* Browse activities*/
+
+ul.about-activities {
+    margin-top: 2rem;
+    list-style-type: none;
+    font-family: var(--font-roboto);
+    font-size: var(--font-body);
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+ul.about-activities li {
+    display: flex;
+    padding-bottom: .3rem;
+}
+
+/* Activities */
+.activity-one {
+    margin-top: 16rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--color-yellow);
+    background-size: 100vw;
+    transform: skewY(-3deg);
+}
+
+.activity-one h1, .activity-one p, .activity-one img, .activity-one .button-holder {
+    transform: skewY(3deg);
+}
+
+.activity-two {
+    margin-top: 16rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--color-pink-light);
+    background-size: 100vw;
+    transform: skewY(3deg);
+}
+
+.activity-two h1, .activity-two p, .activity-two img, .activity-two .button-holder {
+    transform: skewY(-3deg);
+}
+
+.activity-one .button-holder, .activity-two .button-holder {
+    justify-content: center;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 2rem;
+    border-top: var(--border-grey);
+    background: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer-text {
+    font-family: var(--font-raleway);
+    font-size: var(--font-footer);
+    color: var(--color-font-faded);
+    font-style: italic;
+    padding-left: 8rem;
+}
+

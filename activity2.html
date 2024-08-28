@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Educational Website">
+    <meta name="author" content="Klaudia Krzos">
+    <title>Educational Website - Drag and Drop game</title>
+
+    <!--jQuery library scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/activity2.js"></script>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activity2.css">
+
+</head>
+
+<body>
+<header class="header">
+
+    <nav class="navigation">
+
+        <div class="logo">
+            <a href="index.html"><span class="logo-pink">kids</span><span class="logo-black">health</span></a>
+        </div>
+
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="index.html">Home</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="forparents.html">For parents</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main class="main">
+
+    <div class="activity-two content padding-big margin-top-big margin-bottom-small">
+
+        <div class="call-to-action">
+
+            <h1 class="hand-writing">
+                #02: Healthy or unhealthy?
+            </h1>
+
+            <p class="body-text">
+                Do you think you know which products can help you live a healthy life, and which ones should be avoided?
+            </p>
+
+            <p class="body-text">
+                Check your knowledge in this drag-and-drop game!
+            </p>
+            
+            <p class="body-text">
+                <strong>How to play:</strong>
+            </p>
+
+            <p class="body-text">
+                Drag only healthy products and drop them in the highlighted area. There are 4 healthy products among 8 available!
+            </p>
+            
+        
+            <div class="button-holder">
+
+                <a href="browseactivities.html" class="button-pink">Back to all activities</a>
+
+            </div>
+
+    </div>
+
+    <div class="home-image-holder">
+        <img src="images/food_choice_illustration.png" alt="Kids health" class="home-image">
+    </div>
+
+</div>
+
+
+<div class="content auto-height margin-top-big margin-bottom-small">
+
+    <div id ="draggableItems" class="food-images">
+
+      
+        <div class="food-image draggable healthy">
+            <img src="images/lemon.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable unhealthy">
+            <img src="images/pizza.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable healthy">
+            <img src="images/pineapple.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable unhealthy">
+            <img src="images/hamburger.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable healthy">
+            <img src="images/banana.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable healthy">
+            <img src="images/apple.png" class="food-img">
+        </div>
+
+        <div class="food-image draggable unhealthy">
+            <img src="images/cupcake.png" class="food-img">
+        </div>
+        
+    </div>
+
+</div>
+
+    <h1 class="hand-writing center-text">
+    Which 4 foods are healthy?
+    </h1>
+
+    <div id="droppableContainer" class="content padding-big margin-bottom-small">
+
+    </div>
+
+</main>
+
+<footer class="footer margin-top-big">
+    <p class="footer-text">Copyright © kidshealth 2020. Designed by Klaudia Krzos</p>
+</footer>
+
+</body>
+</html>
